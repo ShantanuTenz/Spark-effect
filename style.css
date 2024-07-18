@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: aqua;
+  }
+  
+  #sparkle-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, pink 60%, blue 0%);
+    pointer-events: none;
+    animation: sparkle 1s linear forwards;
+  }
+
+  
+  @keyframes sparkle {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
